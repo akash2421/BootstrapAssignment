@@ -125,7 +125,7 @@ margin-top: 100px;
   display: flex;
   flex-direction: row;
   margin-left: 10%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .big-feature-container:first-child(2)
 {
@@ -397,11 +397,20 @@ margin-left: 10%;
    margin-top: -80px;
         transform: rotate(365deg);
     }
-    .section .buttn{
-      position: relative;
-      z-index: 1;
-    
+    .section-container-items .section{
+      display:flex;
+      flex-direction: column ;
+      align-items: center;
+      gap: 2rem;
     }
+    .section .bttn{
+      
+margin-top: 300px;    
+    }
+    .section h2,p{
+    text-align: center;
+    }
+
     .search-model-form input {
       width: 257px!important;
       font-size: 20px!important;
