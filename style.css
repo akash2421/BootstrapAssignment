@@ -44,6 +44,7 @@
     background: #249af2;
     border: none;
     cursor: pointer;
+    position: absolute;
     z-index:1;
     color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
@@ -89,7 +90,8 @@
     height: auto;
 }
 .wave{
-    margin-top: -150px;
+  z-index: 0;
+    margin-top: -190px;
     transform: rotate(365deg);
 }
 .wave2{
@@ -148,7 +150,7 @@ margin-top: 100px;
     margin-top: -100px;
 }
 .service{
-    margin-top: -50px;
+    margin-top: -70px;
     background: #f3f4f5;
     width: 100%;
     margin-bottom: 200px;
@@ -347,6 +349,30 @@ footer span{
     .wrapper .carousel {
       grid-auto-columns: 100%;
     }
+    .alta img
+    {
+      display: none;
+    }
+    .wave{
+   margin-top: -80px;
+        transform: rotate(365deg);
+    }
+    .section .buttn{
+      position: relative;
+      z-index: 1;
+    
+    }
+    .service
+    {
+      margin-top: 100px;
+    }
+    .wave2{
+      transform: rotate(180deg);
+    margin-top: 100px;
+        margin-bottom: -70px;
+    ;
+    }
+    
     .carousel .card
     {
 margin-left: 20px;
