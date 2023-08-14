@@ -427,9 +427,12 @@ margin-top: 300px;
       transform: rotate(180deg);
     margin-top: 100px;
         margin-bottom: -70px;
-    ;
-    }
     
+    }
+    .big-feature-container
+    {
+      margin-bottom: 20px;
+    }
     .carousel .card
     {
 margin-left: 20px;
