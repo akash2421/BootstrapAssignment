@@ -456,7 +456,13 @@ margin-left: 20px;
       width: 100%;
       align-items: center;
     }
-
+    .container-fluid
+    {
+      display:flex;
+      flex-direction: row !important;
+      justify-content: space-around;
+      align-items: center;
+    }
 
   }
 
@@ -471,5 +477,6 @@ margin-left: 20px;
    padding:5px 20px!important;
    display:block;
 }
+
 }
 
