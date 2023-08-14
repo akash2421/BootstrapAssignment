@@ -94,18 +94,18 @@
 
 .wave{
   z-index: 0;
-    margin-top: -200px;
-    transform: rotate(365deg);
+    margin-top: 200px;
+    transform: rotate(365 deg);
 }
 .wave2{
-  transform: rotate(180deg);
+  transform: rotate(180 deg);
 margin-top: 100px;
     margin-bottom: -250px;
 ;
 }
 
 .service{
-  margin-top: 50px;
+  margin-top: -50px;
   background: #f3f4f5;
   width: 100%;
   margin-bottom: 200px;
@@ -394,8 +394,7 @@ margin-left: 10%;
       display: none;
     }
     .wave{
-   margin-top: -80px;
-        transform: rotate(365deg);
+        transform: rotate(365 deg);
     }
     .section-container-items .section{
       display:flex;
@@ -421,7 +420,7 @@ margin-top: 300px;
   }
     .service
     {
-      margin-top: 100px;
+      margin-top: 00px;
     }
     .wave2{
       transform: rotate(180deg);
