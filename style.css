@@ -94,11 +94,11 @@
 
 .wave{
   z-index: 0;
-    margin-top: 200px;
+    margin-top: 10px;
     transform: rotate(365 deg);
 }
 .wave2{
-  transform: rotate(180 deg);
+  transform: rotate(180deg);
 margin-top: 100px;
     margin-bottom: -250px;
 ;
