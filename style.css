@@ -1,14 +1,18 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  background: #f8f9fa;
 
+
+}
+body
+{
+}
 /*Bannaer*/
-.section-container-items{
-  padding:100px 0px 0px 0px;
-  color: #000;
-}
 
-
-.section a{
+/* .section a{
     display: inline-block;
-}
+} */
 
 .section h1{
     font-size: 68px;
@@ -34,20 +38,16 @@
 
 .section .bttn{
     margin-top: 65px;
-    display: block;
     padding: 21px 65px;
     font-size: 17px;
-    font-weight: 500;
-    letter-spacing: 0.18px;
-    line-height: 17px;
+ z-index: 999;
     border-radius: 50px;
     background: #249af2;
     border: none;
     cursor: pointer;
-    position: absolute;
-    z-index:1;
     color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
 
 .bttns{
         margin-top: -10px;
@@ -72,31 +72,18 @@
 }
 
 
-.alta-title{
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #fff;
-    opacity: 0.7;
-    z-index: 1;
-    position: absolute;
-    right: 0; 
-	transform: rotate(90deg) translateY(-60px);
-}
-
-.alta img {
-    width:80%;
-    height: auto;
-}
-
-/*service*/
-
-.wave{
+.image1{
+  width: 80%;
+  object-fit: contain;
+  margin: auto;
   z-index: 0;
-    margin-top: 10px;
-    transform: rotate(365 deg);
 }
+.image1 img{
+width: 100%;
+}
+
+
+
 .wave2{
   transform: rotate(180deg);
 margin-top: 100px;
@@ -104,27 +91,14 @@ margin-top: 100px;
 ;
 }
 
-.service{
-  margin-top: -50px;
-  background: #f3f4f5;
-  width: 100%;
-  margin-bottom: 200px;
-}
 
 
 /*work*/
-.work{
-  margin-top: -150px;
-  background: #fff;
-  width: 100%;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
+
 .big-feature-container
 {
   display: flex;
   flex-direction: row;
-  margin-left: 10%;
   margin-bottom: 10px;
 }
 .big-feature-container:first-child(2)
@@ -218,10 +192,10 @@ margin-left: 10%;
   .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3));
+    grid-auto-columns: calc((100% / 3) - 2px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 20px;
+    gap: 10px;
     margin-left: 22px;
     border-radius: 8px;
     padding: 20px;
@@ -250,7 +224,7 @@ margin-left: 10%;
   .carousel .card {
     scroll-snap-align: start;
     height: 282px;
-    width: 340px;
+    width: 360px;
     margin-top: 20px;
     margin-right:30px;
     list-style: none;
@@ -318,14 +292,6 @@ margin-left: 10%;
 }
 
 
-  /*label*/
-
-  .label{
-    margin-top: 250px;
-    background: #f3f4f5;
-    width: 100%;
-    overflow: hidden;
-  }
   .logoss
 {
   display: flex;
@@ -351,9 +317,9 @@ margin-left: 10%;
 
 
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1100px) {
     .wrapper .carousel {
-      grid-auto-columns: 100%;
+      grid-auto-columns: 50%;
     }
     .header-inner{
       background-color:white;
@@ -362,6 +328,14 @@ margin-left: 10%;
      .nav-item .nav-link {
       color:black;
     }
+   
+   .wave{
+    z-index: 0;
+   }
+   .section .bttn{
+    position: absolute;
+    z-index: 1;
+   }
     .service .card{
     margin: 20px;
     }
@@ -385,16 +359,35 @@ margin-left: 10%;
         font-size: 30px;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 990px) {
+    .wave{
+      margin-bottom: -200px;
+    }
+    .wave2{
+  padding: -20px;  }
+     .image1{
+  display: none;
+      }
+    
+    }
+
+  @media screen and (max-width: 768px) {
     .wrapper .carousel {
-      grid-auto-columns: 100%;
+      grid-auto-columns: 60%;
     }
-    .alta img
+    .big-feature-container
     {
-      display: none;
+      width: 100%;
+      
     }
+ 
+.conatiner{
+  width: 80%  !important
+}
+   
     .wave{
         transform: rotate(365 deg);
+        margin-bottom: -200px;
     }
     .section-container-items .section{
       display:flex;
@@ -404,7 +397,7 @@ margin-left: 10%;
     }
     .section .bttn{
       
-margin-top: 300px;    
+margin-top: 30px;    
     }
     .section h2,p{
     text-align: center;
@@ -467,6 +460,20 @@ margin-left: 20px;
 
 
 
+  @media screen and (max-width: 425px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+     .carousel .card {
+      width: 100%;
+      height: 400px ;
+    }
+    .section .bttn{
+      width: 80%;
+      left: 10%;
+      position: absolute;
+    }
+  }
 
 /* small screen device responsive 
 ===================================*/
