@@ -7,7 +7,7 @@ const carouselChildrens = [...carousel.children];
 
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+carouselChildrens.slice(-cardPerView).forEach(card => {
     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
 });
 
