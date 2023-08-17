@@ -309,7 +309,9 @@ margin-left: 10%;
     padding: 2px 6px
   }
 
-
+.wave-move{
+  margin-bottom: -250px;
+}
 
 
 
@@ -319,7 +321,11 @@ margin-left: 10%;
        display:block;
     }
    
-   
+    .wave-move{
+      margin-bottom: 0;
+
+    }
+  
   
     }
 
@@ -328,11 +334,17 @@ margin-left: 10%;
     .wrapper .carousel {
       grid-auto-columns: 50%;
     }
-  }
+    .wave-move
+    {
+     margin-top: 100px;
+    }
      .nav-item .nav-link {
       color:black;
     }
-   
+    .wave-move{
+      margin-bottom: 0;
+
+    }
   
     .navbar-brand{
         color: #000!important;
@@ -342,13 +354,17 @@ margin-left: 10%;
     .content-banner .first-title {
         font-size: 30px;
     }
+  }
   
   @media screen and (max-width: 990px) {
    
      .image1{
   display: none;
       }
-    
+    .wave-move{
+      margin-bottom: 0;
+
+    }
     }
 
   @media screen and (max-width: 768px) {
