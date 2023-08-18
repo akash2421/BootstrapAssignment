@@ -3,14 +3,14 @@
   box-sizing: border-box;
 }
 
-body{
-  background: #f8f8f8;
-}
-/*Bannaer*/
 
-/* .section a{
-    display: inline-block;
-} */
+:root{
+  --primary-color :  #249af2;
+}
+
+.move-wave{
+  margin-bottom: -250px;
+}
 
 .section h1{
     font-size: 68px;
@@ -39,8 +39,8 @@ body{
     padding: 21px 65px;
     font-size: 17px;
     border-radius: 50px;
-    background: #249af2;
-z-index: 1  ;
+    background: var(--primary-color);
+    z-index: 1  ;
     position: relative;
     border: none;
     cursor: pointer;
@@ -309,10 +309,6 @@ margin-left: 10%;
     padding: 2px 6px
   }
 
-.wave-move{
-  margin-bottom: -250px;
-}
-
 
 
   @media  only screen and (min-width:1200px){
@@ -321,10 +317,7 @@ margin-left: 10%;
        display:block;
     }
    
-    .wave-move{
-      margin-bottom: 0;
-
-    }
+    
   
   
     }
@@ -334,14 +327,14 @@ margin-left: 10%;
     .wrapper .carousel {
       grid-auto-columns: 50%;
     }
-    .wave-move
+    .move-wave
     {
      margin-top: 100px;
     }
      .nav-item .nav-link {
       color:black;
     }
-    .wave-move{
+    .move-wave{
       margin-bottom: 0;
 
     }
@@ -361,7 +354,7 @@ margin-left: 10%;
      .image1{
   display: none;
       }
-    .wave-move{
+    .move-wave{
       margin-bottom: 0;
 
     }
