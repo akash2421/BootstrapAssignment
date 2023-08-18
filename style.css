@@ -6,6 +6,7 @@
 
 :root{
   --primary-color :  #249af2;
+  --white-color : #fff
 }
 
 .move-wave{
@@ -44,7 +45,7 @@
     position: relative;
     border: none;
     cursor: pointer;
-    color: #fff;
+    color:var(--white-color);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
@@ -60,7 +61,7 @@
         background:var(--primary-color);
         border: none;
         cursor: pointer;
-        color: #fff;
+        color:var(--white-color);
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
     
     
@@ -316,10 +317,7 @@ margin-left: 10%;
        padding:5px 20px!important;
        display:block;
     }
-   
-    
-  
-  
+ 
     }
 
 
