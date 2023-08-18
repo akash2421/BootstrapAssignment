@@ -13,12 +13,12 @@ carouselChildrens.slice(-cardPerView).forEach(card => {
 
 
 
-carousel.classList.add("no-transition");
-carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove("no-transition");
 
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
     });
 });
+
+
+
