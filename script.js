@@ -1,5 +1,5 @@
 const carousel = document.querySelector(".carousel");
-const Cards = carousel.querySelector(".card");
+const Cards = document.querySelector(".card");
 const arrowBtns = document.querySelectorAll(".wrapper i");
 
 arrowBtns.forEach(arrowleft => {
