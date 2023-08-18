@@ -57,7 +57,7 @@
         letter-spacing: 0.18px;
         line-height: 17px;
         border-radius: 50px;
-        background: #249af2;
+        background:var(--primary-color);
         border: none;
         cursor: pointer;
         color: #fff;
