@@ -1,10 +1,10 @@
 const carousel = document.querySelector(".carousel");
-const firstCard = carousel.querySelector(".card");
+const Card = carousel.querySelector(".card");
 const arrowBtns = document.querySelectorAll(".wrapper i");
 
 arrowBtns.forEach(arrowleft => {
     arrowleft.addEventListener("click", () => {
-        const scrollAmount = arrowleft.id === "left" ? -firstCard.offsetWidth : firstCard.offsetWidth;
+        const scrollAmount = arrowleft.id === "left" ? -Card.offsetWidth : Card.offsetWidth;
         carousel.scrollLeft += scrollAmount;
     });
 });
